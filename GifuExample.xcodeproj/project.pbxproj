@@ -12,7 +12,8 @@
 		AD9B495B283D9FBB002F0B6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B495A283D9FBB002F0B6B /* ViewController.swift */; };
 		AD9B4960283D9FBD002F0B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9B495F283D9FBD002F0B6B /* Assets.xcassets */; };
 		AD9B4963283D9FBD002F0B6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9B4961283D9FBD002F0B6B /* LaunchScreen.storyboard */; };
-		AD9B496C283DB3E6002F0B6B /* RP.gif in Resources */ = {isa = PBXBuildFile; fileRef = AD9B496B283DB3E6002F0B6B /* RP.gif */; };
+		AD9B4971283DB5B1002F0B6B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD9B4970283DB5B1002F0B6B /* SnapKit */; };
+		AD9B4973283DB6BA002F0B6B /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = AD9B4972283DB6BA002F0B6B /* giphy.gif */; };
 		E47349193FE50941628D6DF9 /* Pods_GifuExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9F25D6BF69EAAFDC494564 /* Pods_GifuExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +27,7 @@
 		AD9B495F283D9FBD002F0B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD9B4962283D9FBD002F0B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD9B4964283D9FBD002F0B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD9B496B283DB3E6002F0B6B /* RP.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RP.gif; sourceTree = "<group>"; };
+		AD9B4972283DB6BA002F0B6B /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 		D12D6F4CC55CAF231121E8F2 /* Pods-GifuExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifuExample.debug.xcconfig"; path = "Target Support Files/Pods-GifuExample/Pods-GifuExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,6 +37,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E47349193FE50941628D6DF9 /* Pods_GifuExample.framework in Frameworks */,
+				AD9B4971283DB5B1002F0B6B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,9 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				AD9B496A283DB3CD002F0B6B /* Images */,
-				AD9B4956283D9FBB002F0B6B /* AppDelegate.swift */,
-				AD9B4958283D9FBB002F0B6B /* SceneDelegate.swift */,
-				AD9B495A283D9FBB002F0B6B /* ViewController.swift */,
+				AD9B496D283DB55A002F0B6B /* AppDelegate */,
+				AD9B496E283DB568002F0B6B /* Scenes */,
 				AD9B495F283D9FBD002F0B6B /* Assets.xcassets */,
 				AD9B4961283D9FBD002F0B6B /* LaunchScreen.storyboard */,
 				AD9B4964283D9FBD002F0B6B /* Info.plist */,
@@ -85,9 +86,26 @@
 		AD9B496A283DB3CD002F0B6B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				AD9B496B283DB3E6002F0B6B /* RP.gif */,
+				AD9B4972283DB6BA002F0B6B /* giphy.gif */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		AD9B496D283DB55A002F0B6B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AD9B4956283D9FBB002F0B6B /* AppDelegate.swift */,
+				AD9B4958283D9FBB002F0B6B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AD9B496E283DB568002F0B6B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AD9B495A283D9FBB002F0B6B /* ViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		F4A7666F230BE2268ECB68A9 /* Pods */ = {
@@ -96,7 +114,6 @@
 				D12D6F4CC55CAF231121E8F2 /* Pods-GifuExample.debug.xcconfig */,
 				ABE478712E35420C232DF4EC /* Pods-GifuExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +135,9 @@
 			dependencies = (
 			);
 			name = GifuExample;
+			packageProductDependencies = (
+				AD9B4970283DB5B1002F0B6B /* SnapKit */,
+			);
 			productName = GifuExample;
 			productReference = AD9B4953283D9FBB002F0B6B /* GifuExample.app */;
 			productType = "com.apple.product-type.application";
@@ -146,6 +166,9 @@
 				Base,
 			);
 			mainGroup = AD9B494A283D9FBB002F0B6B;
+			packageReferences = (
+				AD9B496F283DB5B1002F0B6B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = AD9B4954283D9FBB002F0B6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,8 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD9B4963283D9FBD002F0B6B /* LaunchScreen.storyboard in Resources */,
+				AD9B4973283DB6BA002F0B6B /* giphy.gif in Resources */,
 				AD9B4960283D9FBD002F0B6B /* Assets.xcassets in Resources */,
-				AD9B496C283DB3E6002F0B6B /* RP.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +454,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD9B496F283DB5B1002F0B6B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD9B4970283DB5B1002F0B6B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD9B496F283DB5B1002F0B6B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD9B494B283D9FBB002F0B6B /* Project object */;
 }
